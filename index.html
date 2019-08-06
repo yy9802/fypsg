@@ -124,6 +124,16 @@
         spaceBetween: 30,
         mousewheel: true,
         on: {
+            slideChangeTransitionStart: function() {
+                console.log(this.activeIndex)
+                if (this.activeIndex == 1) {
+                    $('.p1-video').click();
+
+                    //$('.p1-video').trigger('pause');
+                    // $(this).css('display', 'none');
+                    // $('.p1-video-mc-bg2').css('display', 'block');
+                }
+            },
             slideChangeTransitionEnd: function() { //页面切换
                 switch (this.activeIndex) { //下标从0开始
                     case 4: //箭头消失
@@ -132,8 +142,8 @@
                     case 0: //首页动画进场
                         p1_Fun();
                         break;
-                    case 1: //动画退场
-                         $('.p1-video').click();
+                    case 1: //动画退场，点击视频
+                        // $('.p1-video').click();
                         p1_Out();
                         break;
                     default:
