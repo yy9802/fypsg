@@ -124,7 +124,7 @@
         spaceBetween: 30,
         mousewheel: true,
         on: {
-            slideChangeTransitionStart: function() {
+            touchMove: function() {
                 console.log(this.activeIndex)
                 if (this.activeIndex == 1) {
                     $('.p1-video').click();
