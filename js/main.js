@@ -12,7 +12,7 @@ loader_Fun()
 function loader_Fun() {
 
     var callbacks = [];
-    var imgs = ['images/AdviseVertical.png', 'images/fyps-p1-1.png', 'images/fyps-p1-2.png', 'images/fyps-p1-3.png', 'images/fyps-p1-4.png', 'images/fyps-p1-5.png', 'images/fyps-p1-6.png', 'images/fyps-p1-7.png', 'images/fyps-p1-8.png', 'images/fyps-p1-9.png', 'images/fyps-p1-10.png', 'images/fyps-p1-11.png', 'images/fyps-p1-12.png', 'images/fyps-p1-13.png', 'images/fyps-p1-14.png', 'images/fyps-p1-15.png', 'images/fyps-p1-16.jpg'];
+    var imgs = ['images/AdviseVertical.png', 'images/fyps-p1-1.png', 'images/fyps-p1-2.png', 'images/fyps-p1-3.png', 'images/fyps-p1-4.png', 'images/fyps-p1-5.png', 'images/fyps-p1-6.png', 'images/fyps-p1-7.png', 'images/fyps-p1-8.png', 'images/fyps-p1-9.png', 'images/fyps-p1-10.png', 'images/fyps-p1-11.png', 'images/fyps-p1-12.png', 'images/fyps-p1-13.png', 'images/fyps-p1-14.png', 'images/fyps-p1-15.png', 'images/fyps-p1-16.jpg', 'images/fyps-p1-20.png'];
 
     imgLoader(imgs, function(percentage) {
 
@@ -85,8 +85,8 @@ window.onorientationchange = function() {
 function p1_Fun() {
 
 
-    TweenMax.fromTo($('.light1'), 1, { x: -500, y: 60, delay: 0, ease: Strong.easeOut, transformOrigin: "center center" }, { x: 500, y: -60, delay: 0, ease: Strong.easeOut, transformOrigin: "center center" });
-    TweenMax.fromTo($('.light2'), 1.5, { x: 105, y: 500, delay: .1, ease: Strong.easeOut, transformOrigin: "center center" }, { x: -155, y: -700, delay: .1, ease: Strong.easeOut, transformOrigin: "center center" });
+    TweenMax.fromTo($('.light1'), 1, { alpha: 0, x: -500, y: 60, delay: 0, ease: Strong.easeOut, transformOrigin: "center center" }, { alpha: 1, x: 500, y: -60, delay: 0, ease: Strong.easeOut, transformOrigin: "center center" });
+    TweenMax.fromTo($('.light2'), 1.5, { alpha: 0, x: 105, y: 500, delay: .1, ease: Strong.easeOut, transformOrigin: "center center" }, { alpha: 1, x: -155, y: -700, delay: .1, ease: Strong.easeOut, transformOrigin: "center center" });
     TweenMax.fromTo($('.p1-line'), 1, { alpha: 0, delay: .2, ease: Strong.easeOut, transformOrigin: "center center" }, { alpha: 1, delay: .2, ease: Strong.easeOut, transformOrigin: "center center" });
     TweenMax.fromTo($('.p1-line2'), 1, { alpha: 0, delay: .3, ease: Strong.easeOut, transformOrigin: "center center" }, { alpha: 1, delay: .3, ease: Strong.easeOut, transformOrigin: "center center" });
     TweenMax.fromTo($('.p1-img3'), 1, { alpha: 0, delay: .2, ease: Strong.easeOut, transformOrigin: "center center" }, { alpha: 1, delay: .2, ease: Strong.easeOut, transformOrigin: "center center" });
